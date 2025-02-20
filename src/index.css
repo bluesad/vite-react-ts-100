@@ -1,4 +1,86 @@
 :root {
+  --echarts-axis-title-font-family: 'fantasy, Arial, sans-serif';
+  --echarts-axis-label-font-family: 'fantasy, Arial, sans-serif';
+
+
+  --echarts-color-1: #5470c6;
+  --echarts-font-family: 'Arial, sans-serif';
+  --echarts-background-color: #ffffff;
+
+  --echarts-text-color: pink;
+  --echarts-bg-color: magenta;
+  --echarts-series-colors: #5470c6, #91cc75, #fac858;
+
+  --echarts-tooltip-bg-color: #cdcdcd;
+
+  /* Axis Titles */
+  --echarts-axis-title-color: #333;
+  --echarts-axis-title-font-size: 24px;
+  --echarts-axis-title-font-weight: bolder;
+  --echarts-axis-title-padding: 8px;
+
+  /* Axis Labels */
+  --echarts-axis-label-color: #666;
+  --echarts-axis-label-font-size: 12px;
+  --echarts-axis-label-font-weight: normal;
+  --echarts-axis-label-padding: 4px;
+  --echarts-axis-label-rotate: 0;
+  --echarts-axis-label-margin: 18px;
+
+  /* Axis Lines */
+  --echarts-axis-line-width: 1px;
+  --echarts-axis-line-color: lime;
+  --echarts-axis-line-type: solid;
+
+  /* Axis Ticks */
+  --echarts-axis-tick-length: 5px;
+  --echarts-axis-tick-width: 1px;
+  --echarts-axis-tick-color: cyan;
+
+  /* Basic Point Styling */
+  --echarts-symbol-size: 10px;
+  --echarts-symbol-color: #5470c6;
+  --echarts-symbol-border-color: #fff;
+  --echarts-symbol-border-width: 2px;
+  --echarts-symbol-opacity: 0.8;
+
+  /* Hover State */
+  --echarts-symbol-hover-size: 15px;
+  --echarts-symbol-hover-color: #91cc75;
+  --echarts-symbol-hover-opacity: 1;
+
+  /* Selected State */
+  --echarts-symbol-selected-size: 12px;
+  --echarts-symbol-selected-color: #fac858;
+  --echarts-symbol-selected-opacity: 1;
+
+  /* Emphasis Effects */
+  --echarts-emphasis-scale: 1.5;
+  --echarts-emphasis-blur: 0.7;
+  --echarts-emphasis-shadow-blur: 10;
+  --echarts-emphasis-shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Light Theme */
+[data-theme="light"] {
+  --echarts-symbol-color: #5470c6;
+  --echarts-symbol-border-color: #ffffff;
+  --echarts-emphasis-shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --echarts-axis-title-color: #fff;
+  --echarts-axis-label-color: #ccc;
+  --echarts-axis-line-color: #555;
+  --echarts-axis-tick-color: #555;
+  --echarts-symbol-color: #91cc75;
+  --echarts-symbol-border-color: #333333;
+  --echarts-emphasis-shadow-color: rgba(255, 255, 255, 0.3);
+}
+
+:root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
