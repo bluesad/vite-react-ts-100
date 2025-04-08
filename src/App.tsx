@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
+import EchartsDemo from './EchartsDemo'
+import EchartsDemo2 from './EchartsDemo2'
+import EchartsReact from './EchartsReact'
+import EchartsOne from './EchartsOne'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +34,11 @@ function App() {
         </a>
       </div>
       <h1>Vite + React + TS 100%</h1>
+      <EchartsDemo />
+      <EchartsDemo2 />
+      <EchartsReact />
+      <EchartsOne />
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}

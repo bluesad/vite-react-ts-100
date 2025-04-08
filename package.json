@@ -5,19 +5,25 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "npm run dev -- --host 0.0.0.0",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "prepreview": "npm run build",
+    "preview": "vite preview",
+    "types": "tsc --noEmit"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@kbox-labs/react-echarts": "^1.4.2",
+    "echarts": "^5.6.0",
+    "echarts-for-react": "^3.0.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "@vitejs/plugin-react": "^2.0.1",
-    "typescript": "^4.6.4",
-    "vite": "^3.0.7",
-    "vite-plugin-pwa": "^0.12.3"
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^2.2.0",
+    "typescript": "^5.7.3",
+    "vite": "^3.2.11",
+    "vite-plugin-pwa": "^0.12.8"
   }
 }
